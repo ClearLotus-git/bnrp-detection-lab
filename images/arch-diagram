@@ -1,0 +1,3 @@
+[Victim Host] → (LLMNR Request) → [Attacker / Responder]  
+       ↑                                   ↓  
+    [Detection Script] logs → [SIEM (Splunk/ELK)]  
