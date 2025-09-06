@@ -14,6 +14,8 @@ It simulates false host requests and logs any spoofed responses (indicative of a
 
 ##  Repository Structure
 - `scripts/`  PowerShell detection script
+- `scripts/template.ps1`  Example script
+-  `scripts/bnrp-detection.ps1` Lab ready
 - `sample-logs/` Example poisoning logs (CSV + console output)
 - `images/`  Screenshots + diagrams
 - `README.md`  Documentation
