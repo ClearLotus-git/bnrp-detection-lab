@@ -8,7 +8,6 @@ It simulates false host requests and logs any spoofed responses (indicative of a
 -  Detects spoofed LLMNR/NBT-NS responses
 -  Logs attacker IP + requested hostname
 -  Exports to CSV for ingestion into SIEMs (Splunk/ELK/etc.)
--  Includes **sample logs** and **screenshots**
 
 ---
 
