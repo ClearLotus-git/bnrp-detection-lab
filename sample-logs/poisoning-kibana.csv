@@ -1,0 +1,4 @@
+@timestamp,host,event.module,event.action,source.ip,destination.ip,message
+2025-09-06T14:32:15Z,WIN10,llmnr,request,192.168.38.105,192.168.38.20,"LLMNR/NBT-NS spoofing attempt detected (hostname=filsrv01)"
+2025-09-06T14:32:19Z,WIN10,llmnr,request,192.168.38.105,192.168.38.21,"LLMNR/NBT-NS spoofing attempt detected (hostname=dc01)"
+2025-09-06T14:33:02Z,WIN10,nbt-ns,request,192.168.38.105,192.168.38.25,"NBT-NS spoofing attempt detected (hostname=backup01)"
