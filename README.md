@@ -13,13 +13,14 @@ It simulates false host requests and logs any spoofed responses (indicative of a
 
 ---
 
-I added a `-TestMode` parameter to the script.  
+I added a `-TestMode` parameter to the the test script.  
 
 When enabled, this generates **synthetic detections** by producing random `192.168.1.x` IP addresses 
 to simulate spoofing responses. This allowed me to validate that the script. Please check the script
 template for proper use and edit it accordingly. The example shown in the images has a loopback for the 
-test script when using `bnrp-detection-safe-test.ps1` Please edit accordingly. There is an updated one 
-with an added filter to skip loopback called `bnrp-detection-noloop-test.ps1` .
+test script when using `bnrp-detection-safe-test.ps1` Please edit accordingly. There is an updated test 
+with an added filter to skip loopback called `bnrp-detection-noloop-test.ps1` . The final script is 
+`bnrp-detection.ps1`
 
 ##  Example Usage
 ```powershell
