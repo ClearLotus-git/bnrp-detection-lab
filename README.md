@@ -9,6 +9,8 @@ It simulates false host requests and logs any spoofed responses (indicative of a
 -  Logs attacker IP + requested hostname
 -  Exports to CSV for ingestion into SIEMs (Splunk/ELK/etc.)
 
+`bnrp-detection.ps1` is the main script
+
 ---
 
 I added a `-TestMode` parameter to the script.  
