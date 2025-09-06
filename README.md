@@ -15,7 +15,8 @@ I added a `-TestMode` parameter to the script.
 
 When enabled, this generates **synthetic detections** by producing random `192.168.1.x` IP addresses 
 to simulate spoofing responses. This allowed me to validate that the script. Please check the script
-template for proper use and edit it accordingly.
+template for proper use and edit it accordingly. The example shown in the images has a loopback for the 
+test script. Please edit accordingly. 
 
 ##  Example Usage
 ```powershell
