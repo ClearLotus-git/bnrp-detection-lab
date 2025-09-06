@@ -1,0 +1,4 @@
+Time,Host,Event,Message
+2025-09-06 14:35:00,WIN10,LLMNR request,"LLMNR request for printer01.local (no spoofed response)"
+2025-09-06 14:36:20,WIN10,NBT-NS query,"NBT-NS broadcast for fileshare01.local (legitimate)"
+2025-09-06 14:37:45,WIN10,mDNS query,"mDNS request for apple-tv.local (benign)"
