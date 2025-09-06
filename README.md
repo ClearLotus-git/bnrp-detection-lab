@@ -9,11 +9,24 @@ It simulates false host requests and logs any spoofed responses (indicative of a
 -  Logs attacker IP + requested hostname
 -  Exports to CSV for ingestion into SIEMs (Splunk/ELK/etc.)
 
-`bnrp-detection.ps1` is the main script
+## What is Broadcast Name Resolution Poisoning?
+
+Broadcast Name Resolution Poisoning (BNRP) is a **man-in-the-middle technique** where an attacker abuses legacy Windows name resolution protocols — **LLMNR (Link-Local Multicast Name Resolution)** and **NBT-NS (NetBIOS Name Service)**.  
+
+When a host on the local network broadcasts a request like *“Who has FILESERVER?”*, the attacker quickly responds with *“I do”*. This tricks the victim into sending authentication attempts (such as NTLM hashes) to the attacker’s machine.  
+
+These captured credentials can then be:
+- **Cracked offline** to reveal plaintext passwords  
+- **Relayed** to other systems for lateral movement or privilege escalation  
+
+### Why this matters
+LLMNR and NBT-NS are still enabled by default in many Windows environments, which makes this attack straightforward and effective. Detecting and disabling these protocols is an important defensive step for securing enterprise networks.  
+
 
 ---
+## Testing Purpose
 
-I added a `-TestMode` parameter to the the test script.  
+I added a `-TestMode` parameter to the the test script:  
 
 When enabled, this generates **synthetic detections** by producing random `192.168.1.x` IP addresses 
 to simulate spoofing responses. This allowed me to validate that the script. Please check the script
